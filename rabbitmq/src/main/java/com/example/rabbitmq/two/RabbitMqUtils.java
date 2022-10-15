@@ -5,7 +5,7 @@ import com.rabbitmq.client.Connection;
 import com.rabbitmq.client.ConnectionFactory;
 
 /**
- * 版权：(C) 版权所有 2000-2021 上海天好电子商务股份有限公司苏州分公司
+ * 版权：(C) 版权所有 2000-2021
  * <简述> 连接工厂，创建信道
  * <详细描述> RabbitMqUtils
  *

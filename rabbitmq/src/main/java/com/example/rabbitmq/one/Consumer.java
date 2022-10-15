@@ -3,7 +3,7 @@ package com.example.rabbitmq.one;
 import com.rabbitmq.client.*;
 
 /**
- * 版权：(C) 版权所有 2000-2021 上海天好电子商务股份有限公司苏州分公司
+ * 版权：(C) 版权所有 2000-2021
  * <简述>
  * <详细描述> Consumer
  *

@@ -1,12 +1,13 @@
 package com.example.rabbitmq.seven;
 
 import com.example.rabbitmq.two.RabbitMqUtils;
+import com.rabbitmq.client.BuiltinExchangeType;
 import com.rabbitmq.client.Channel;
 
 import java.util.Scanner;
 
 /**
- * 版权：(C) 版权所有 2000-2021 上海天好电子商务股份有限公司苏州分公司
+ * 版权：(C) 版权所有 2000-2021
  * <简述> 交换机
  * <详细描述> Producer
  *
@@ -27,7 +28,7 @@ public class Producer {
          * 1.交换机名称
          * 2.交换机类型
          */
-        channel.exchangeDeclare(EXCHANGE_NAME, "fanout");
+        channel.exchangeDeclare(EXCHANGE_NAME, BuiltinExchangeType.FANOUT);
         // 控制台输入
         Scanner scanner = new Scanner(System.in);
         while (scanner.hasNext()) {

@@ -16,6 +16,4 @@ String queueName = channel.queueDeclare().getQueue();// 不起名
 扇出示例
 生产者 -> 交换机 -> 两个队列 -> 各一个消费者
 
-学到直接交换机开头
-https://www.bilibili.com/video/BV1cb4y1o7zz?p=44&spm_id_from=pageDriver&vd_source=3d3abeae3b926364c339460eed1a8b90
 ``

@@ -6,7 +6,7 @@ import com.rabbitmq.client.Channel;
 import java.util.Scanner;
 
 /**
- * 版权：(C) 版权所有 2000-2021 上海天好电子商务股份有限公司苏州分公司
+ * 版权：(C) 版权所有 2000-2021
  * <简述> 消息应答，失败，放回队列
  * <详细描述> Producer
  *
