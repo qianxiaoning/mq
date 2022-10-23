@@ -19,7 +19,7 @@ public class Consumer {
     public static void main(String[] args) throws Exception {
         // 连接工厂
         ConnectionFactory factory = new ConnectionFactory();
-        factory.setHost("192.168.30.117");
+        factory.setHost("192.168.137.101");
         factory.setUsername("admin");
         factory.setPassword("123");
         // 信道
