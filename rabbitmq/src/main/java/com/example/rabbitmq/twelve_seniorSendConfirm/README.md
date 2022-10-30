@@ -31,5 +31,4 @@ http://localhost:8080/confirm/sendMessage3/xxx
 队列收不到消息的，回退接口（改routingKey名字为key2，不可路由）：
 http://localhost:8080/confirm/sendMessage4/xxx
 
-看到77，备份交换机
 ``

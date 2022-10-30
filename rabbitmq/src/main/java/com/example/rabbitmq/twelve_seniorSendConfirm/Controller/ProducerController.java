@@ -63,4 +63,17 @@ public class ProducerController {
                 ConfirmConfig.CONFIRM_ROUTING_KEY + "2", message + "key12", correlationData);
         log.info("发送消息内容：{}", message + "key12");
     }
+
+    @GetMapping("/sendMessage5/{message}")
+    public void sendMessage5(@PathVariable String message){
+        CorrelationData correlationData = new CorrelationData("1");
+        rabbitTemplate.convertAndSend(ConfirmConfig.CONFIRM_EXCHANGE_NAME,
+                ConfirmConfig.CONFIRM_ROUTING_KEY, message + "key1", correlationData);
+        log.info("发送消息内容：{}", message + "key1");
+
+        CorrelationData correlationData2 = new CorrelationData("3");
+        rabbitTemplate.convertAndSend(ConfirmConfig.CONFIRM_EXCHANGE_NAME2,
+                ConfirmConfig.CONFIRM_ROUTING_KEY + "2", message + "key12", correlationData2);
+        log.info("发送消息内容：{}", message + "key12");
+    }
 }

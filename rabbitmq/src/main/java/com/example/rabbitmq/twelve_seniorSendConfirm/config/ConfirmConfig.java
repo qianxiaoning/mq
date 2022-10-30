@@ -16,8 +16,10 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class ConfirmConfig {
-    // 交换机
+    // 确认交换机
     public static final String CONFIRM_EXCHANGE_NAME = "confirm_exchange";
+    // 确认交换机2（会转发备份交换机的那个）
+    public static final String CONFIRM_EXCHANGE_NAME2 = "confirm_exchange2";
     // 队列
     public static final String CONFIRM_QUEUE_NAME = "confirm_queue";
     // routingKey
